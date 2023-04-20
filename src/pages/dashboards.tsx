@@ -10,9 +10,12 @@ export default function Dashboards() {
           user:context.user
         }
       })
+
     useEffect(() => {
         api.get('/me').then(res => {
             console.log(res)
+        }).catch(err => {
+          console.log(err)
         })
     }, [])
 
