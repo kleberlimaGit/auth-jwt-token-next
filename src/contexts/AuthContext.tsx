@@ -1,9 +1,8 @@
-import { api } from "@/libs/api";
 import { ReactNode, useEffect, useState } from "react";
 import { createContext } from "use-context-selector";
 import Router from "next/router";
 import { setCookie, parseCookies, destroyCookie } from "nookies";
-
+import { api } from "@/libs/apiClient";
 type User = {
   email: string | null;
   permissions: string[] | null;
